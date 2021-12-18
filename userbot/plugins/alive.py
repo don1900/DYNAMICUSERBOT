@@ -41,9 +41,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 uptime = get_readable_time((time.time() - StartTime))
-DEFAULTUSER = ALIVE_NAME or "𝖑𝖊ɠêɳ̃dẞø✞︎ 🇮🇳"
-DYNAMIC_IMG = "https://telegra.ph/file/153977a71b928874151a5.jpg"
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice 𝖑𝖊ɠêɳ̃dẞø✞︎"
+DEFAULTUSER = ALIVE_NAME or "ɖʏռǟʍɨƈẞø✞︎ 🇮🇳"
+DYNAMIC_IMG = "https://telegra.ph/file/8e236edc9d8003679c21a.jpg"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ɛǟֆȶ օʀ աɛֆȶ ɖʏռǟʍɨƈ ʊֆɛʀɮօȶ ɨֆ ȶɦɛ աɛֆȶ"
 CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@DYNAMIC_Userbot"
 
 DYNAMIC = bot.uid
@@ -60,14 +60,14 @@ async def amireallyalive(alive):
     if DYNAMIC_IMG:
         DYNAMIC_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
 
-        DYNAMIC_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        DYNAMIC_caption += f"        **✘𝕭𝖔† 𝕾𝖙𝖆𝖙𝖚𝖘✘** \n"
-        DYNAMIC_caption += f"•🔥• **Oաղ̃ҽ̈ɾ**          ~ {ALIVE_NAME}\n\n"
-        DYNAMIC_caption += f"•🌟• **𝖑𝖊ɠêɳ̃dẞø†**   ~ {DYNAMICversion}\n"
-        DYNAMIC_caption += f"•🌟• **†ҽ̀lҽ́thøղ̃**     ~ `{version.__version__}`\n"
-        DYNAMIC_caption += f"•🌟• **𝚄ρtime**         ~ `{uptime}`\n"
-        DYNAMIC_caption += f"•🌟• **𝙶𝚛𝚘𝚞𝚙**           ~ [𝙶𝚛𝚘𝚞𝚙](t.me/DYNAMIC_Userbot)\n"
-        DYNAMIC_caption += f"•🌟• **𝙼𝚢 𝙶𝚛𝚘𝚞𝚙**  ~ {CUSTOM_YOUR_GROUP}\n"
+        DYNAMIC_caption += f"ɖʏռǟʍɨƈ ɮօȶ ɨֆ աօʀӄɨռɢ քɛʀʄɛƈȶʟʏ\n\n"
+        DYNAMIC_caption += f"        **🔥ɖʏռǟʍɨƈ ֆʏֆȶɛʍ🔥** \n\n"
+        DYNAMIC_caption += f"•⭕️• **ʍʏ ʍǟֆȶɛʀ**          ~ {ALIVE_NAME}\n"
+        DYNAMIC_caption += f"•⭕️• **ɖʏռǟʍɨƈẞø✞︎ ʋɛʀֆɨօռ**   ~ {DYNAMICversion}\n"
+        DYNAMIC_caption += f"•⭕️• **ȶɛʟɛȶɦօռ ʋɛʀֆɨօռ**     ~ `{version.__version__}`\n"
+        DYNAMIC_caption += f"•⭕️• **ʊքȶɨʍɛ**         ~ `{uptime}`\n"
+        DYNAMIC_caption += f"•⭕️• **ɢʀօʊք**           ~ [𝙶𝚛𝚘𝚞𝚙](t.me/TheFriends_Zone)\n"
+        DYNAMIC_caption += f"•⭕️• **ɱყ ɢʀօʊք**  ~ {CUSTOM_YOUR_GROUP}\n"
 
         await alive.client.send_file(
             alive.chat_id, DYNAMIC_IMG, caption=DYNAMIC_caption, reply_to=reply_to_id
@@ -79,25 +79,25 @@ async def amireallyalive(alive):
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
             f"         \n"
-            f"•⚡• 𝕿єℓєτнοи    : `{version.__version__}`\n"
-            f"🇮🇳 ℓєgєи∂ϐοτ  : `{DYNAMICversion}`\n"
-            f"🇮🇳 υρτιмє        : `{uptime}`\n"
-            f"🔱 ɱαรƭεɾ        : {mention}\n"
-            f"🔱 σωɳεɾ         : [ℓєgєи∂](t.me/The_DON)\n",
+            f"•⚡• ȶɛʟɛȶɦօռ ʋɛʀֆɨօռ   : `{version.__version__}`\n"
+            f"🇮🇳 ɖʏռǟʍɨƈẞø✞︎  : `{DYNAMICversion}`\n"
+            f"🇮🇳 ʊքȶɨʍɛ        : `{uptime}`\n"
+            f"🔱 ʍʏ ʍǟֆȶɛʀ        : {mention}\n"
+            f"🔱 σωɳεɾ         : [ℓєgєи∂](t.me/Always_DON)\n",
         )
 
 
 msg = f"""
-**  ⚜️ Lêɠêɳ̃dẞø† ιѕ σиℓιиє ⚜️**
+**DYNAMIC BOT IS WORKING PERFECTLY**
 
        {Config.ALIVE_MSG}
-    **  Bø✞︎ ẞ✞︎α✞︎µѕ **
-**•⚜️•Øաղ̃ҽ̈r     :** **{mention}**
-**•🌹•𝖑𝖊ɠêɳ̃dẞø✞︎  :** {DYNAMICversion}
-**•🌹•✞︎ҽ̀lҽ́ƭhøղ  :** {version.__version__}
-**•🌹•Ãbûßê     :**  {abuse_m}
-**•🌹•ßudø      :**  {is_sudo}
-**•🌹•Bøt.      :** {Config.BOY_OR_GIRL}
+    **  SYSTEM STATUS **
+**•⚜️•OWNER    :** **{mention}**
+**•🌹•DYNAMIC STATUS  :** {DYNAMICversion}
+**•🌹•TELETHON  :** {version.__version__}
+**•🌹•ABUSE     :**  {abuse_m}
+**•🌹•SUDO      :**  {is_sudo}
+**•🌹•BOT      :** {Config.BOY_OR_GIRL}
 """
 botname = Config.BOT_USERNAME
 
