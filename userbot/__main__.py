@@ -20,8 +20,10 @@ from userbot.utils import (
 from var import Var
 
 l2 = Config.SUDO_COMMAND_HAND_LER
-DYNAMIC_PIC = "https://telegra.ph/file/e753315316673cff51085.mp4"
+DYNAMIC_PIC = "https://telegra.ph/file/8e236edc9d8003679c21a.jpg"
 l1 = Config.COMMAND_HAND_LER
+
+firstname = replied_user.user.first_name
 
 
 async def add_bot(bot_token):
@@ -45,16 +47,16 @@ else:
                 "BOT_TOKEN", api_id=Var.APP_ID, api_hash=Var.API_HASH
             ).start(bot_token=Var.BOT_TOKEN)
             LOGS.info("Checking Completed. Proceeding to next step...")
-            LOGS.info("♥️ Starting DYNAMICBOT ♥️")
+            LOGS.info("❤️ DYNAMIC USERBOT IS STARTING IN A DYNAMIC WAY ❤️")
             bot.loop.run_until_complete(add_bot(Config.BOT_USERNAME))
-            LOGS.info("🥇🔥 DYNAMICBOT Startup Completed 🔥🥇")
+            LOGS.info("❤️‍🔥🔥 DYNAMIC USERBOT Startup Completed 🔥❤️‍🔥")
         else:
             bot.start()
     except Exception as e:
         LOGS.error(f"BOT_TOKEN - {str(e)}")
         sys.exit()
 
-print("📍⚜Loading Modules / Plugins⚜✔")
+print("📍⚜️Dynamic Plugins / Are Loading⚜️✔️")
 
 
 async def module():
@@ -84,7 +86,7 @@ async def assistants():
                 shortname = path1.stem
                 start_assistant(shortname.replace(".py", ""))
     else:
-        print("⚠️Assistant Not Loaded⚠️")
+        print("⚠️Assistant Not Loaded⚠️🤖")
 
 
 addon = os.environ.get("EXTRA_PLUGIN", None)
@@ -154,15 +156,15 @@ async def help(event):
     if event.query.user_id is not bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message="Hello sir/miss,\nHow can i help u",
+            message="Hello {firstname} This Is The Dynamic Assistant ,How Can I Help You?",
             buttons=[
                 [
                     custom.Button.inline("🙇 Usᴇʀs Lɪsᴛ 🙇", data="users"),
                     custom.Button.inline("👾 Cᴏᴍᴍᴀɴᴅs ✘👾", data="ibcmd"),
                 ],
                 [
-                    Button.url(" Support ", "https://t.me/DYNAMIC_Userbot"),
-                    Button.url(" Updates ", "https://t.me/Official_DYNAMICBOT"),
+                    Button.url(" Support ", "https://t.me/TheFriends_Zone"),
+                    Button.url(" Updates ", "https://t.me/Dynamic_userbot"),
                 ],
                 [custom.Button.inline("⚙ Sᴇᴛᴛɪɴɢs ⚙", data="osg")],
                 [custom.Button.inline("⚜ Hack ⚜", data="hck")],
@@ -206,7 +208,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**Wʜᴀᴛ Dᴏ Yᴏᴜ Wᴀɴᴛ Yᴏ Eᴅɪᴛ Iɴ Aʟɪᴠᴇ?\nFᴏʀ Aɴʏ Kɪɴᴅ Oғ Hᴇʟᴘ Dᴏ Jᴏɪɴ [Đ₳Ɽ₭ Ƒմʂʂìօղ](https://t.me/Dark_Fussion_chat)**",
+            message=f"**Wʜᴀᴛ Dᴏ Yᴏᴜ Wᴀɴᴛ Yᴏ Eᴅɪᴛ Iɴ Aʟɪᴠᴇ?\nFᴏʀ Aɴʏ Kɪɴᴅ Oғ Hᴇʟᴘ Dᴏ Jᴏɪɴ [ֆʊքքօʀȶ](https://t.me/thefriends_zone)**",
             buttons=[
                 [
                     Button.inline("✘ Aʟɪᴠᴇ Nᴀᴍᴇ ✘", data="ame"),
@@ -223,7 +225,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**Wʜɪᴄʜ Aʟɪᴠᴇ Pɪᴄ Dᴏ Yᴏᴜ Wᴀɴᴛ Tᴏ Cʜᴀɴɢᴇ?\nFᴏʀ Aɴʏ Kɪɴᴅ Oғ Hᴇʟᴘ Dᴏ Jᴏɪɴ [Lêɠêɳ̃dẞø†](https://t.me/Official_DYNAMICBOT)**",
+            message=f"**Wʜɪᴄʜ Aʟɪᴠᴇ Pɪᴄ Dᴏ Yᴏᴜ Wᴀɴᴛ Tᴏ Cʜᴀɴɢᴇ?\nFᴏʀ Aɴʏ Kɪɴᴅ Oғ Hᴇʟᴘ Dᴏ Jᴏɪɴ [ֆʊքքօʀȶ](https://t.me/thefriends_zone)**",
             buttons=[
                 [Button.inline("✘ Dᴇғᴀᴜʟᴛ Aʟɪᴠᴇ ✘", data="aig")],
                 [Button.inline("✘ Bᴀᴄᴋ ✘", data="live")],
@@ -238,7 +240,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**Yᴏᴜ Cᴀɴ Cʜᴀɴɢᴇ Aʟɪᴠᴇ Nᴀᴍᴇ..!!\nJᴜsᴛ Fᴏʟʟᴏᴡ Tʜᴇ Sᴛᴇᴘs.! \n\nFᴏʀ Aɴʏ Kɪɴᴅ Oғ Pʀᴏʙʟᴇᴍ Oʀ Dᴏᴜʙᴛ Dᴏ Jᴏɪɴ [Lêɠêɳ̃dẞø†](http://t.me/Official_DYNAMICBOT)\n\nJᴜsᴛ Tʏᴘᴇ\n\n`.set var ALIVE_NAME <Name>`\n\nRᴇᴍᴏᴠᴇ `<>` Tʜɪs.**",
+            message=f"**Yᴏᴜ Cᴀɴ Cʜᴀɴɢᴇ Aʟɪᴠᴇ Nᴀᴍᴇ..!!\nJᴜsᴛ Fᴏʟʟᴏᴡ Tʜᴇ Sᴛᴇᴘs.! \n\nFᴏʀ Aɴʏ Kɪɴᴅ Oғ Pʀᴏʙʟᴇᴍ Oʀ Dᴏᴜʙᴛ Dᴏ Jᴏɪɴ [ֆʊքքօʀȶ](https://t.me/thefriends_zone)\n\nJᴜsᴛ Tʏᴘᴇ\n\n`.set var ALIVE_NAME <Name>`\n\nRᴇᴍᴏᴠᴇ `<>` Tʜɪs.**",
             buttons=[
                 [Button.inline("✘ Bᴀᴄᴋ ✘", data="live")],
                 [Button.inline("🚫 Cᴀɴᴄᴇʟ 🚫", data="osg")],
@@ -252,7 +254,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**You can change Alive Pic for `.alive`\nJust follow the steps.!\nAny kind of Problem or doubt do join [Lêɠêɳ̃dẞø†](t.me/Official_DYNAMICBOT)\n\nJust type\n\n`.set var ALIVE_PIC <Telegraph Link>`\n\nRemove `<>` this**",
+            message=f"**You can change Alive Pic for `.alive`\nJust follow the steps.!\nAny kind of Problem or doubt do join [ֆʊքքօʀȶ](https://t.me/thefriends_zone)\n\nJust type\n\n`.set var ALIVE_PIC <Telegraph Link>`\n\nRemove `<>` this**",
             buttons=[
                 [Button.inline("✘ Bᴀᴄᴋ ✘", data="img")],
                 [Button.inline("🚫 Cᴀɴᴄᴇʟ 🚫", data="osg")],
@@ -266,7 +268,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**You can change Alive Pic for `.dalive` \nJust follow the steps.!\nAny kind of Problem or doubt do join [Lêɠêɳ̃dẞø†](t.me/Official_DYNAMICBOT)\n\nJust type\n\n`.set var AWAKE_PIC <Telegraph Link>`\n\nRemove `<>` this.**",
+            message=f"**You can change Alive Pic for `.dalive` \nJust follow the steps.!\nAny kind of Problem or doubt do join [ֆʊքքօʀȶ](https://t.me/thefriends_zone)\n\nJust type\n\n`.set var AWAKE_PIC <Telegraph Link>`\n\nRemove `<>` this.**",
             buttons=[
                 [Button.inline("✘ Bᴀᴄᴋ ✘", data="img")],
                 [Button.inline("🚫 Cᴀɴᴄᴇʟ 🚫", data="osg")],
@@ -280,7 +282,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**You can change Alive Pic for `.alive`\nJust follow the steps.!\nAny kind of Problem or doubt do join [Lêɠêɳ̃dẞø†](t.me/Official_DYNAMICBOT)\n\nJust type\n\n`.set var ALIVE_PIC <Telegraph Link>`\n\nRemove `<>` this**",
+            message=f"**You can change Alive Pic for `.alive`\nJust follow the steps.!\nAny kind of Problem or doubt do join [ֆʊքքօʀȶ](https://t.me/thefriends_zone)\n\nJust type\n\n`.set var ALIVE_PIC <Telegraph Link>`\n\nRemove `<>` this**",
             buttons=[
                 [Button.inline("✘ Bᴀᴄᴋ ✘", data="img")],
                 [Button.inline("🚫 Cᴀɴᴄᴇʟ 🚫", data="osg")],
@@ -294,7 +296,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**You can change Alive Pic for `.dalive` \nJust follow the steps.!\nAny kind of Problem or doubt do join [Lêɠêɳ̃dẞø†](t.me/Official_DYNAMICBOT)\n\nJust type\n\n`.set var AWAKE_PIC <Telegraph Link>`\n\nRemove `<>` this.**",
+            message=f"**You can change Alive Pic for `.dalive` \nJust follow the steps.!\nAny kind of Problem or doubt do join [ֆʊքքօʀȶ](https://t.me/thefriends_zone)\n\nJust type\n\n`.set var AWAKE_PIC <Telegraph Link>`\n\nRemove `<>` this.**",
             buttons=[
                 [Button.inline("✘ Bᴀᴄᴋ ✘", data="img")],
                 [Button.inline("🚫 Cᴀɴᴄᴇʟ 🚫", data="osg")],
@@ -308,7 +310,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**What do you want to edit in Pm Permit?\nFor Any kind of Problem or doubt do join [Lêɠêɳ̃dẞø†](t.me/Official_DYNAMICBOT)**",
+            message=f"**What do you want to edit in Pm Permit?\nFor Any kind of Problem or doubt do join [ֆʊքքօʀȶ](https://t.me/thefriends_zone)**",
             buttons=[
                 [
                     Button.inline("✘ Pᴍ Pᴇʀᴍɪᴛ Tᴇxᴛ ✘", data="txt"),
@@ -325,7 +327,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**You can change Pic permit Pic..!! \nJust follow the steps.!\nAny kind of Problem or doubt do join [Lêɠêɳ̃dẞø†](t.me/Official_DYNAMICBOT) type\n\n`.set var PM_PIC <Telegraph Link>`\n\nRemove `<>` this.**",
+            message=f"**You can change Pic permit Pic..!! \nJust follow the steps.!\nAny kind of Problem or doubt do join [ֆʊքքօʀȶ](https://t.me/thefriends_zone) type\n\n`.set var PM_PIC <Telegraph Link>`\n\nRemove `<>` this.**",
             buttons=[
                 [Button.inline("✘ Bᴀᴄᴋ ✘", data="pmit")],
                 [Button.inline("🚫 Cᴀɴᴄᴇʟ 🚫", data="osg")],
@@ -339,7 +341,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**You can change Pic permit message..!! \nJust follow the steps.!\nAny kind of Problem or doubt do join [Lêɠêɳ̃dẞø†](t.me/Official_DYNAMICBOT)\n\nJust type\n\n`.set var PM_MSG <Text>`\n\nRemove `<>` this.**",
+            message=f"**You can change Pic permit message..!! \nJust follow the steps.!\nAny kind of Problem or doubt do join [ֆʊքքօʀȶ](https://t.me/thefriends_zone)\n\nJust type\n\n`.set var PM_MSG <Text>`\n\nRemove `<>` this.**",
             buttons=[
                 [Button.inline("✘ Bᴀᴄᴋ ✘", data="pmit")],
                 [Button.inline("🚫 Cᴀɴᴄᴇʟ 🚫", data="osg")],
@@ -353,7 +355,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**Which type of setting do you want to edit?\nYou can change anything from these..!!\nAny kind for help do join [Lêɠêɳ̃dẞø†](t.me/Official_DYNAMICBOT)**",
+            message=f"**Which type of setting do you want to edit?\nYou can change anything from these..!!\nAny kind for help do join [ֆʊքքօʀȶ](https://t.me/thefriends_zone)**",
             buttons=[
                 [
                     Button.inline("✘ Aʟɪᴠᴇ ✘", data="live"),
@@ -408,13 +410,13 @@ async def hekp():
             await bot.send_file(
                 Config.LOGGER_ID,
                 DYNAMIC_PIC,
-                caption=f"Deployed Lêɠêɳ̃dẞø† Successfully\n\nLêɠêɳ̃dẞø† ~ {DYNAMICversion}\n\nType `{l1}help` or `{l1}ping` to check!\nFor Assistant Type `.on` \n\nJoin [DYNAMICBOT Channel](t.me/Official_DYNAMICBOT) for Updates & [DYNAMICBOT Chat](t.me/DYNAMIC_Userbot) for any query regarding DYNAMICBOT",
+                caption=f"Deployed ɖʏռǟʍɨƈ ʊֆɛʀɮօȶ Successfully\n\nɖʏռǟʍɨƈ ʊֆɛʀɮօȶ ~ {DYNAMICversion}\n\nType `{l1}help` or `{l1}ping` to check!\nFor Assistant Type `.on` \n\nJoin [DYNAMICBOT Channel](t.me/Dynamic_Userbot) for Updates & [DYNAMICBOT Chat](http://t.me/thefriends_zone) for any query regarding DYNAMICBOT",
             )
     except Exception as e:
         print(str(e))
 
     try:
-        await bot(JoinChannelRequest("@Official_DYNAMICBOT"))
+        await bot(JoinChannelRequest("@Dynamic_Userbot"))
     except BaseException:
         pass
 
@@ -470,9 +472,9 @@ print(
 ╔════❰DYNAMICBOT❱═❍⊱❁۪۪
 ║┣⪼ OWNER - {Config.ALIVE_NAME}
 ║┣⪼ Group - @DYNAMIC_Userbot
-║┣⪼ CREATOR - @The_DON
+║┣⪼ CREATOR - @Always_Don
 ║┣⪼ DYNAMICBOT - {DYNAMICversion}
-║┣⪼ ✨ 『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
+║┣⪼ ✨ 『DYNAMIC』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
 ║╰━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱"""
 )
