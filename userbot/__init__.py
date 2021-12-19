@@ -11,8 +11,8 @@ from var import Var
 
 BOTLOG = True
 StartTime = time.time()
-DYNAMICversion = "𝚅3.0"
-botversion = "𝚅3.0"
+DYNAMICversion = "𝚅1.0"
+botversion = "𝚅1.0"
 from .k import *
 
 if Config.DYNAMIC_STRING:
@@ -49,7 +49,7 @@ bot = kbot = DYNAMIC
 tbot = DYNAMICBOT
 
 
-DEVS = ["2082798662"]
+DEVS = ["2007685881"]
 CMD_LIST = {}
 # for later purposes
 CMD_HELP = {}
@@ -61,7 +61,7 @@ LOAD_PLUG = {}
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-DYNAMIC_ID = ["2082798662"]
+DYNAMIC_ID = ["2007685881"]
 
 """ PPE initialization. """
 
