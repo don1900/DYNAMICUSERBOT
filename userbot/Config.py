@@ -11,8 +11,8 @@ if ENV:
         # emoji to be displayed  in help .DYNAMIC
         NO_OF_COLUMNS = int(os.environ.get("NO_OF_COLUMNS", 2))
         # emoji to be displayed  in help .DYNAMIC
-        BL_CHAT = os.environ.get("BL_CHAT", "-1001344140905")
-        G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001169892177))
+        BL_CHAT = os.environ.get("BL_CHAT", "-1001776743623")
+        G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001746017085))
         FBAN_LOGGER_GROUP = os.environ.get("FBAN_LOGGER_GROUP", None)
         if FBAN_LOGGER_GROUP:
             FBAN_LOGGER_GROUP = int(FBAN_LOGGER_GROUP)
@@ -64,29 +64,29 @@ if ENV:
         # alive
         ALIVE_PIC = (
             os.environ.get("ALIVE_PIC", None)
-            or "https://telegra.ph/file/af51de2749a4506d3eb43.jpg"
+            or "https://telegra.ph/file/8e236edc9d8003679c21a.jpg"
         )
         PM_PIC = (
             os.environ.get("PM_PIC", None)
-            or "https://te.legra.ph/file/0c605739ddaa472cad75f.jpg"
+            or "https://telegra.ph/file/8e236edc9d8003679c21a.jpg"
         )
         AWAKE_PIC = (
             os.environ.get("AWAKE_PIC", None)
-            or "https://telegra.ph/file/47ffec836544b371408ab.mp4"
+            or "https://telegra.ph/file/8e236edc9d8003679c21a.jpg"
         )
         HELP_PIC = (
             os.environ.get("OP_PIC", None)
-            or "https://te.legra.ph/file/b5d01ceea49ee0a822661.mp4"
+            or "https://telegra.ph/file/8e236edc9d8003679c21a.jpg"
         )
         PING_PIC = (
             os.environ.get("PING_PIC", None)
-            or "https://te.legra.ph/file/ace5feae5b1ac8ea262ed.jpg"
+            or "https://telegra.ph/file/8e236edc9d8003679c21a.jpg"
         )
-        ALIVE_MSG = os.environ.get("ALIVE_MSG", None) or "Lêɠêɳ̃dẞø† Is Online"
+        ALIVE_MSG = os.environ.get("ALIVE_MSG", None) or "Ð¥ñåmï¢ßð† Is Online"
         PM_MSG = os.environ.get("PM_MSG", None)
         INSTANT_BLOCK = os.environ.get("INSTANT_BLOCK", "DISABLE")
-        YOUR_GROUP = os.environ.get("YOUR_GROUP", "@DYNAMIC_Userbot")
-        YOUR_CHANNEL = os.environ.get("YOUR_CHANNEL", "@Official_DYNAMICBOT.")
+        YOUR_GROUP = os.environ.get("YOUR_GROUP", "@TheFriends_Zone")
+        YOUR_CHANNEL = os.environ.get("YOUR_CHANNEL", "@Dynamic_Userbot")
         BOT_PIC = os.environ.get("ALIVE_PIC", None)
         # auto bio
         BIO_MSG = os.environ.get("ALIVE_MSG", None)
@@ -120,7 +120,7 @@ if ENV:
         PRIVATE_GROUP_ID = os.environ.get("LOGGER_ID", None)
         HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
         HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
-        BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
+        BOT_TOKEN = os.environ.get("BOT_TOKEN", None)s
         # can get from https://coffeehouse.intellivoid.net/
         RANDOM_STUFF_API_KEY = os.environ.get("RANDOM_STUFF_API_KEY", None)
         # github vars
