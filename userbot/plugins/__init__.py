@@ -9,7 +9,7 @@ from userbot.utils import *
 
 DYNAMIC_USER = bot.me.first_name
 The_DON = bot.uid
-DYNAMIC_mention = f"[{DYNAMIC_USER}](tg://user?id={The_DON})"
+DYNAMIC_mention = f"[{DYNAMIC_USER}](tg://user?id={Always_Don})"
 DYNAMIC_logo = "./userbot/resources/pics/-6163428037589314866_121.jpg"
 DYNAMIC_logo1 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
 DYNAMIC_logo2 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
