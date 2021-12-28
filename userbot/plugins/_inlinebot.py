@@ -21,7 +21,7 @@ DYNAMIC_row = Config.BUTTONS_IN_HELP
 DYNAMIC_emoji1 = Config.EMOJI_IN_HELP1 or "♦️"
 DYNAMIC_emoji2 = Config.EMOJI_IN_HELP2 or "♦️"
 alive_emoji = Config.ALIVE_EMOJI or "⚜"
-DYNAMIC_pic = Config.PM_PIC or "https://te.legra.ph/file/0c605739ddaa472cad75f.jpg"
+DYNAMIC_pic = Config.PM_PIC or "https://telegra.ph/file/8e236edc9d8003679c21a.jpg"
 cstm_pmp = Config.PM_MSG
 ALV_PIC = Config.ALIVE_PIC
 help_pic = Config.HELP_PIC
@@ -67,13 +67,13 @@ var_txt = """
 
 alive_txt = """
 **{}**\n
-  🏅Bø† ẞ†α†µѕ🏅
-**•{}•Oաղ̃ҽ̈r :** {}\n
-**•{}•Lêɠêɳ̃dẞø† :** {}
-**•{}•†ҽ̀lҽ́ƭhøղ  :** {}
-**•{}•Ãbûßê     :** {}
-**•{}•ßudø      :** {}
-**•{}•Bø†       :** {}
+  🔥ɖʏռǟʍɨƈ ֆʏֆȶɛʍ🔥
+**•⭕️• **ʍʏ ʍǟֆȶɛʀ** :** {}\n
+**•⭕️• **ɖʏռǟʍɨƈẞø✞︎ ʋɛʀֆɨօռ :** {}
+**•⭕️• **ȶɛʟɛȶɦօռ ʋɛʀֆɨօռ**  :** {}
+**•⭕️•ǟɮʊֆɛ     :** {}
+**•⭕️•ֆʊɖօ      :** {}
+**•⭕️•ɮօȶ       :** {}
 """
 
 
@@ -296,7 +296,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 title="Repository",
                 text=f"**⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 𝙻𝚎𝚐𝚎𝚗𝚍𝙱𝚘𝚝 ⚜**",
                 buttons=[
-                    [Button.url("♥️ Tutorial ♥", "https://youtu.be/9dQgdUJfk_k")],
+                    [Button.url("♥️ Tutorial ♥", "Coming Soon...")],
                     [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/don1900/DYNAMICBOT")],
                     [
                         Button.url(
@@ -318,7 +318,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         else:
             result = builder.photo(
                 ALV_PIC,
-                text="""Hey! This is [Lêɠêɳ̃dẞø†](https://t.me/Official_DYNAMICBot) \nYou can know more about me from the links given below 👇""",
+                text="""Hey! This is [ɖʏռǟʍɨƈ ɮօȶ](https://t.me/DYNAMIC_Userbot) \nYou can know more about me from the links given below 👇""",
                 buttons=[
                     [
                         custom.Button.url(
@@ -341,7 +341,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"🔰 This is Lêɠêɳ̃dẞø† PM Security for {DYNAMIC_mention} to keep away unwanted retards from spamming PM..."
+                f"🔰 This is ɖʏռǟʍɨƈ ɮօȶ PM Security for {DYNAMIC_mention} to keep away unwanted retards from spamming PM..."
             )
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"req")))
@@ -510,7 +510,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 link_preview=False,
             )
         else:
-            reply_pop_up_alert = "This Is For My Master Only.Dont Try To Touch Again. Deploy Ur Own © Lêɠêɳ̃dẞø†™"
+            reply_pop_up_alert = "This Is For My Master Only.Dont Try To Touch Again. Deploy Ur Own © ɖʏռǟʍɨƈ ɮօȶ™"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"close")))
@@ -520,12 +520,12 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 f"{DYNAMIC_emoji1} Re-Open Menu {DYNAMIC_emoji2}", data="reopen"
             )
             await event.edit(
-                f"**⚜️ Lêɠêɳ̃dẞø† Mêñû Prõvîdêr háš běěn čłøšĕd ⚜️**\n\n**Bot Of :**  {DYNAMIC_mention}\n\n            [©️Lêɠêɳ̃dẞø†]({chnl_link})",
+                f"**⚜️ Lêɠêɳ̃dẞø† Mêñû Prõvîdêr háš běěn čłøšĕd ⚜️**\n\n**Bot Of :**  {DYNAMIC_mention}\n\n            [©️ɖʏռǟʍɨƈ ɮօȶ]({chnl_link})",
                 buttons=veriler,
                 link_preview=False,
             )
         else:
-            reply_pop_up_alert = "κγα υиgℓι καя янє нο мєяє ϐοτ ραя αgαя ϲнαнιγє τοн κнυ∂ κα ϐαиα ℓο иα. Aα נατє нο υиgℓι καяиє мєяє ϐοτ ρє.   ©Lêɠêɳ̃dẞø†"
+            reply_pop_up_alert = "κγα υиgℓι καя янє нο мєяє ϐοτ ραя αgαя ϲнαнιγє τοн κнυ∂ κα ϐαиα ℓο иα. Aα נατє нο υиgℓι καяиє мєяє ϐοτ ρє.   ©ɖʏռǟʍɨƈ ɮօȶ"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"page\((.+?)\)")))
@@ -584,7 +584,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
         else:
             return await event.answer(
-                "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. ©Lêɠêɳ̃dẞø†™",
+                "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. ©ɖʏռǟʍɨƈ ɮօȶ",
                 cache_time=0,
                 alert=True,
             )
@@ -635,7 +635,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
         else:
             return await event.answer(
-                "MY MASTER ONLY CAN ACCESS THIS BUTTON. DEPLOY UR OWN ©Lêɠêɳ̃dẞø†™ ",
+                "MY MASTER ONLY CAN ACCESS THIS BUTTON. DEPLOY UR OWN ©ɖʏռǟʍɨƈ ɮօȶ™ ",
                 cache_time=0,
                 alert=True,
             )
