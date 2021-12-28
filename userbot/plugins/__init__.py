@@ -17,10 +17,10 @@ DYNAMIC_logo4 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
 DYNAMIC_logo3 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
 
 
-perf = "[ †hê Lêɠêɳ̃dẞø† ]"
+perf = "[ ɖʏռǟʍɨƈ ɮօȶ ]"
 
 
-DEVLIST = ["2082798662"]
+DEVLIST = ["2007685881"]
 
 
 async def get_user_id(ids):
@@ -61,10 +61,10 @@ if mybot.startswith("@"):
 else:
     botname = f"@{mybot}"
 
-chnl_link = "https://t.me/Official_DYNAMICBot"
-DYNAMIC_channel = f"[✞︎t͛ẞ̸ 𝖑𝖊ɠêɳ̃dẞø✞︎]({chnl_link})"
-grp_link = "https://t.me/DYNAMIC_Userbot"
-DYNAMIC_grp = f"[𝖑𝖊ɠêɳ̃dẞø✞︎ Group]({grp_link})"
+chnl_link = "https://t.me/DYNAMIC_Userbot"
+DYNAMIC_channel = f"[ɖʏռǟʍɨƈ ɮօȶ]({chnl_link})"
+grp_link = "https://t.me/TheFriends_Zone"
+DYNAMIC_grp = f"[ɖʏռǟʍɨƈ ɮօȶ Group]({grp_link})"
 
 WELCOME_FORMAT = """**Use these fomats in your welcome note to make them attractive.**
   {mention} :  To mention the user
