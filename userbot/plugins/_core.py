@@ -9,7 +9,7 @@ from userbot import *
 from . import *
 
 DELETE_TIMEOUT = 5
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "『Lêɠêɳ̃dẞø†』"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "『ɖʏռǟʍɨƈ ɮօȶ』"
 DYNAMIC = bot.uid
 DYNAMIC = f"[{DEFAULTUSER}](tg://user?id={DYNAMIC})"
 EVAL = os.environ.get("EVAL", None)
@@ -125,7 +125,7 @@ async def install(event):
                                     b = 1
                                 await DYNAMIC.edit(a)
                             return await DYNAMIC.edit(
-                                f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {DYNAMIC_mention}\n\n{string}\n\n        ⚡ **[Lêɠêɳ̃dẞø†]({chnl_link})** ⚡",
+                                f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {DYNAMIC_mention}\n\n{string}\n\n        ⚡ **[ɖʏռǟʍɨƈ ɮօȶ]({chnl_link})** ⚡",
                                 link_preview=False,
                             )
 
@@ -216,7 +216,7 @@ async def install(event):
     o = stdout.decode()
     _o = o.split("\n")
     o = "\n".join(_o)
-    OUTPUT = f"♥️List Of Plugins In 𝖑𝖊ɠêɳ̃dẞø✞︎ 🇮🇳 :- \n\n{o}\n\n<><><><><><><><><><><><><><><><><><><><><><><><>\nHELP:- If you want to know the commands for a plugin, do :- \n.plinfo <plugin name> without the < > brackets. \nJoin https://t.me/DYNAMIC_Userbot for help."
+    OUTPUT = f"♥️List Of Plugins In ɖʏռǟʍɨƈ ɮօȶ 🇮🇳 :- \n\n{o}\n\n<><><><><><><><><><><><><><><><><><><><><><><><>\nHELP:- If you want to know the commands for a plugin, do :- \n.plinfo <plugin name> without the < > brackets. \nJoin https://t.me/DYNAMIC_Userbot for help."
     if len(OUTPUT) > 69:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:
             out_file.name = "cmnds_list.text"
@@ -230,7 +230,7 @@ async def install(event):
             )
             await edit_or_reply(
                 DYNAMIC_file,
-                f"**Output Too Large. This is the file for the list of plugins in ✞︎t͛ẞ̸ 𝖑𝖊ɠêɳ̃dẞø✞︎ .\n\n**BY :- {DEFAULTUSER}**",
+                f"**Output Too Large. This is the file for the list of plugins in ɖʏռǟʍɨƈ ɮօȶ .\n\n**BY :- {DEFAULTUSER}**",
             )
             await event.delete()
 
