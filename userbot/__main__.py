@@ -471,7 +471,7 @@ print(
     f"""
 ╔════❰DYNAMICBOT❱═❍⊱❁۪۪
 ║┣⪼ OWNER - {Config.ALIVE_NAME}
-║┣⪼ Group - @DYNAMIC_Userbot
+║┣⪼ Group - @TheFriends_Zone
 ║┣⪼ CREATOR - @Always_Don
 ║┣⪼ DYNAMICBOT - {DYNAMICversion}
 ║┣⪼ ✨ 『DYNAMIC』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
