@@ -41,7 +41,7 @@ def load_module(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("Lêɠêɳ̃dẞø† ~ " + shortname)
+        LOGS.info("ɖʏռǟʍɨƈɮօȶ ~ " + shortname)
     else:
         import userbot.utils
 
@@ -76,7 +76,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
-        LOGS.info("🔥⚡Lêɠêɳ̃dẞø†⚡🔥 ~ " + shortname)
+        LOGS.info("🔥⚡ɖʏռǟʍɨƈɮօȶ⚡🔥 ~ " + shortname)
 
 
 def start_assistant(shortname):
@@ -98,7 +98,7 @@ def start_assistant(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["userbot.plugins.assistant" + shortname] = mod
-        print("[🤴Assistant🤴 3.0] ~ HAS ~ 💞Installed💞 ~" + shortname)
+        print("[🤴Assistant🤴 1.0] ~ HAS ~ 💞Installed💞 ~" + shortname)
 
 
 def start_spam(shortname):
@@ -128,7 +128,7 @@ def start_spam(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["Spam" + shortname] = mod
-        print("[🔰Spam🔰 3.0] ~ HAS ~ 💞Installed💞 ~" + shortname)
+        print("[🔰Spam🔰 1.0] ~ HAS ~ 💞Installed💞 ~" + shortname)
 
 
 def load_addons(shortname):
