@@ -15,7 +15,7 @@ if okvai == "69":
         client.send_message("me", client.session.save())
         client.send_message(
             "me",
-            "Above is your #DYNAMICBOT STRING SESSION \nPaste this string in Heroku Var.\n\n[Team DYNAMICBOT](t.me/Official_DYNAMICBOT)",
+            "Above is your #DYNAMICBOT STRING SESSION \nPaste this string in Heroku Var.\n\n[Team DYNAMICBOT](t.me/DYNAMIC_USERBOT)",
         )
 
 else:
