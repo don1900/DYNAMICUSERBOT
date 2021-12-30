@@ -1,0 +1,47 @@
+_get_repolink () {
+    local regex
+    regex='(https?)://github.com/.+/.+'
+    if [[ $DYNAMIC_REPO == "DYNAMICBOT" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZS1MZWdlbmRCb3QvTEVHRU5EVVNFUkJPVC9hcmNoaXZlL0xlZ2VuZEJvdC56aXA=" | base64 -d
+    elif [[ $DYNAMIC_REPO == "DYNAMICBOT" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZS1MZWdlbmRCb3QvTEVHRU5EVVNFUkJPVC9hcmNoaXZlL0xlZ2VuZEJvdC56aXA=" | base64 -d
+    elif [[ $DYNAMIC_REPO =~ $regex ]]
+    then
+        if [[ $DYNAMIC_REPO_BRANCH ]]
+        then
+            echo "${DYNAMIC_REPO}/archive/${DYNAMIC_REPO_BRANCH}.zip"
+        else
+            echo "${DYNAMIC_REPO}/archive/main.zip"
+        fi
+    else
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZS1MZWdlbmRCb3QvTEVHRU5EVVNFUkJPVC9hcmNoaXZlL0xlZ2VuZEJvdC56aXA=" | base64 -d
+    fi
+}
+
+
+_setting_bot () {
+    local zippath
+    zippath="DynamicBot.zip"
+    echo "  Downloading DynamicBot V3.O Source Code..."
+    wget -q $(_get_repolink) -O "$zippath"
+    echo "  Unpacking Data ..."
+    LEGENDPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
+    unzip -qq "$zippath"
+    echo "Done"
+    echo "  DynamicBot V3.O Cleaning.."
+    
+    rm -rf "$zippath"
+    sleep 5
+    cd $LEGENDPATH
+    echo "    ⚜️𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝐃𝐲𝐧𝐚𝐦𝐢𝐜𝐁𝐨𝐭⚜️     "
+    echo "
+    🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳
+    "
+
+    python3 ../setup/updater.py ../requirements.txt requirements.txt
+    python3 -m userbot
+}
+
+_setting_bot
